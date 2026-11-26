@@ -2,7 +2,7 @@ PY := backend/.venv/bin/python
 PYTHON ?= python3.13
 DEMO_ENV := AGENTNET_DB_PATH=$(CURDIR)/backend/app/data/demo/agentnet.db AGENTNET_ARTIFACT_DIR=$(CURDIR)/backend/app/data/demo/artifacts
 
-.PHONY: setup models backend-deps frontend-deps dev test smoke discover transfer benchmark e2e demo-seed demo demo-check lint build
+.PHONY: help setup models backend-deps frontend-deps dev test smoke discover transfer benchmark e2e demo-seed demo demo-check lint build
 
 setup: backend-deps models frontend-deps ## one-time install
 
@@ -52,3 +52,6 @@ lint:
 
 build:
 	npm --prefix frontend run build
+
+help: ## list documented targets
+	@grep -E '^[a-zA-Z_-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  %-12s %s\n", $$1, $$2}'
