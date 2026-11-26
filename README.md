@@ -52,6 +52,8 @@ make transfer  # headless: Panda skill (seed 7) transferred to the UR5e (also se
 make benchmark # held-out evaluation; writes docs/EVALUATION_RESULTS.md from the stored run
 make e2e       # Playwright UI tests on an isolated stack (ports 8011/3011, temp DB)
 make demo-check && make demo-seed && make demo   # recording: stability check, clean registry, prod build
+make lint      # frontend ESLint
+make build     # frontend production build
 make dev       # backend http://127.0.0.1:8000 + frontend http://localhost:3000
 ```
 
