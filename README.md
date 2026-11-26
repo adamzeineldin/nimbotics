@@ -78,7 +78,7 @@ backend/scripts        fetch_models.sh, smoke_sim.py, discover_skill.py, transfe
 backend/tests          passport, IK/physics, registry, API
 frontend/              Next.js 16 App Router + Tailwind 4
 docs/                  ARCHITECTURE.md, DEMO_SCRIPT.md, EVALUATION.md, EVALUATION_RESULTS.md,
-                       KNOWN_LIMITATIONS.md
+                       KNOWN_LIMITATIONS.md, SUBMISSION.md
 frontend/e2e/          Playwright UI tests
 ```
 
