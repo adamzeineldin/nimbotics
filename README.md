@@ -77,7 +77,8 @@ backend/app/services   robot_catalog, scene, robot_adapter, kinematics, simulati
 backend/app/api        health, robots, runs (incl. discover), skills, transfers
 backend/scripts        fetch_models.sh, smoke_sim.py, discover_skill.py, transfer_demo.py,
                        benchmark.py, seed_demo.py, demo_check.py
-backend/tests          passport, IK/physics, registry, API
+backend/tests          passport, IK/physics, registry, API, route planner, transfer,
+                       reasoning, evaluation
 frontend/              Next.js 16 App Router + Tailwind 4
 docs/                  ARCHITECTURE.md, DEMO_SCRIPT.md, EVALUATION.md, EVALUATION_RESULTS.md,
                        KNOWN_LIMITATIONS.md, SUBMISSION.md
